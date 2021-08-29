@@ -55,3 +55,23 @@ yarn start
 ```shell
 http://localhost:3333/metadata/hashtags
 ```
+
+## create new hashtag
+
+```http
+# create new hashtag
+
+POST http://localhost:3333/metadata/hashtags HTTP/1.1
+content-type: application/json
+
+{
+    "slug": "#casttoken",
+    "name": "CAST Token",
+    "key": "hashtag.castcle"
+}
+
+###
+
+
+GET http://localhost:3333/metadata/hashtags HTTP/1.1
+```
